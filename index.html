@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="description" content="">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>柱子老师的文件</title>
+<link rel="alternate" type="application/rss+xml" title="" href="feed/index.html">
+<link href="http://fonts.googleapis.com/css?family=Raleway:700,300" rel="stylesheet"
+        type="text/css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/prettify.css">
+</head>
+<body>
+<div class="wrapper">
+<header>
+  <div class="container">
+    <h1 class="lone-header">柱子老师的文件</h1>
+  </div>
+</header>
+<section>
+  <div class="container">
+    <ul class="docs-nav">
+      <li><strong>开始</strong></li>
+      <li><a href="#welcome" class="cc-active">欢迎</a></li>
+      <li class="separator"></li>
+      <li><strong>首先</strong></li>
+      <li><a href="#view_type" class="cc-active">查看</a></li>
+    </ul>
+    <div class="docs-content">
+      <h2>开始</h2>
+      <h3 id="welcome">欢迎</h3>
+	    <p> Are you listening to your customers?</p>
+      <h3 id="benefits"> Benefits</h3>
+    	    <p> Are you listening to your customers?</p>
+      <h3 id="features"> Features</h3>
+   	    <p> Are you listening to your customers?</p>
+      <h3 id="license"> License</h3>
+   	    <p> Are you listening to your customers?</p>
+      <hr>
+      <h2> Customizing Opineo</h2>
+	    <p> Are you listening to your customers?</p>
+      <h3 id="view_type"> View Type</h3>
+      <ul>
+        <li>Detailed View</li>
+      </ul>
+     
+      <pre class="prettyprint">&lt;script&gt;
+      	$(document).ready(function (){
+        $('#DefaultOptions').opineo('results.php', {curvalue:3,
+            view: 'detailed',
+            animation_speed: 'super',
+            show_total_votes_counter: false,
+            show_overall_rating: true});
+         })
+&lt;/script&gt;</pre>
+      <ul>
+        <li>Compact View</li>
+      </ul>
+      <pre class="prettyprint">&lt;script&gt;
+	$(document).ready(function (){
+	$('#CompactView').opineo('results.php',
+    	    {curvalue:3, view: 'compact',
+    	    animation_speed: 'super'});
+	})
+&lt;/script&gt;</pre>
+      <ul>
+        <li>Mini View</li>
+      </ul>
+      <pre class="prettyprint">&lt;script&gt;
+    $(document).ready(function (){
+    $('#MiniView').opineo('results.php', {curvalue:0, view: 'mini', callback: myCallback});
+    })	
+&lt;/script&gt;</pre>
+      <h3 id="animation_style"> Animation Style</h3>
+      <ul>
+        <li>Slow</li>
+      </ul>
+      <pre class="prettyprint">&lt;script&gt;
+    $(document).ready(function (){
+    $('#opineo').opineo('results.php', {curvalue:0, view: 'mini', animation_speed:'slow'});
+    })	
+&lt;/script&gt; </pre>
+      <ul>
+        <li>Medium</li>
+      </ul>
+      <pre class="prettyprint">&lt;script&gt;
+    $(document).ready(function (){
+    $('#opineo').opineo('results.php', {curvalue:0, view: 'mini', animation_speed:'mild'});
+    })	
+&lt;/script&gt; </pre>
+      <ul>
+        <li>Fast</li>
+      </ul>
+      <pre class="prettyprint">&lt;script&gt;
+    $(document).ready(function (){
+    $('#opineo').opineo('results.php', {curvalue:0, view: 'mini', animation_speed:'fast'});
+    })	
+ &lt;/script&gt;</pre>
+      <ul>
+        <li>Super Fast</li>
+      </ul>
+      <pre class="prettyprint">&lt;script&gt;
+    $(document).ready(function (){
+    $('#opineo').opineo('results.php', {curvalue:0, view: 'mini', animation_speed:'super'});
+    })	
+&lt;/script&gt;</pre>
+      <ul>
+        <li>Ultra Fast</li>
+      </ul>
+      <pre class="prettyprint"> &lt;script&gt;
+    $(document).ready(function (){
+    $('#opineo').opineo('results.php', {curvalue:0, view: 'mini', animation_speed:'ultra fast'});
+    })	
+&lt;/script&gt; </pre>
+      <h3 id="bars_text"> Bars Text</h3>
+      <ul>
+        <li>Show</li>
+      </ul>
+      <pre class="prettyprint">&lt;script&gt;
+    $(document).ready(function (){
+    $('#opineo').opineo('results.php', {curvalue:0, view: 'mini', votes_label:true});
+    })	
+&lt;/script&gt;</pre>
+      <ul>
+        <li>Hide</li>
+      </ul>
+      <pre class="prettyprint">&lt;script&gt;
+    $(document).ready(function (){
+    $('#opineo').opineo('results.php', {curvalue:0, view: 'mini', votes_label:false});
+    })	
+ &lt;/script&gt;</pre>
+      <h3 id="vote_counter"> Vote Counter</h3>
+      <ul>
+        <li>Show</li>
+      </ul>
+      <pre class="prettyprint">&lt;script&gt;
+    $(document).ready(function (){
+    $('#opineo').opineo('results.php', {curvalue:0, view: 'mini', show_votes_counter:true});
+    })	
+&lt;/script&gt; </pre>
+      <ul>
+        <li>Hide</li>
+      </ul>
+      <pre class="prettyprint">&lt;script&gt;
+    $(document).ready(function (){
+    $('#opineo').opineo('results.php', {curvalue:0, view: 'mini', votes_label:false});
+    })	
+&lt;/script&gt;</pre>
+      <h3 id="rating_icons"> Rating Icons</h3>
+      <ul>
+        <li>Colored</li>
+        <li>Grey</li>
+      </ul>
+      <h3 id="rating_titles"> Rating Titles</h3>
+      <ul>
+        <li>Text For First Star</li>
+      </ul>
+      <pre class="prettyprint">&lt;script&gt;
+    $(document).ready(function (){
+    $('#opineo').opineo('results.php', {curvalue:0, view: 'mini', star_1_text:'Hate It'});
+    })	
+&lt;/script&gt;</pre>
+      <ul>
+        <li>Text For Second Star</li>
+      </ul>
+      <pre class="prettyprint">&lt;script&gt;
+    $(document).ready(function (){
+    $('#opineo').opineo('results.php', {curvalue:0, view: 'mini', star_2_text:'Don't Like It'});
+    })	
+&lt;/script&gt; </pre>
+      <ul>
+        <li>Text For Third Star</li>
+      </ul>
+      <pre class="prettyprint">&lt;script&gt;
+    $(document).ready(function (){
+    $('#opineo').opineo('results.php', {curvalue:0, view: 'mini', star_1_text:'Its OK'});
+    })	
+&lt;/script&gt;</pre>
+      <ul>
+        <li>Text For Fourth Star</li>
+      </ul>
+      <pre class="prettyprint">&lt;script&gt;
+    $(document).ready(function (){
+    $('#opineo').opineo('results.php', {curvalue:0, view: 'mini', star_1_text:'Like It'});
+    })	
+&lt;/script&gt;</pre>
+      <ul>
+        <li>Text For Fifth Star</li>
+      </ul>
+      <pre class="prettyprint">&lt;script&gt;
+    $(document).ready(function (){
+    $('#opineo').opineo('results.php', {curvalue:0, view: 'mini', star_1_text:'Love It'});
+    })	
+&lt;/script&gt;</pre>
+      <h3 id="bar_colors"> Bar Colors</h3>
+      <ul>
+        <li>Colors of Red Bar</li>
+        <li>Colors of Yellow Bar</li>
+        <li>Colors of Green Bar</li>
+      </ul>
+    </div>
+  </div>
+</section>
+<section class="vibrant centered">
+  <div class="">
+    <h4>柱子老师的文件</h4>
+  </div>
+</section>
+<footer>
+  <div class="">
+    <p> &copy; Copyright 柱子老师</p>
+  </div>
+</footer>
+</div>
+<script src="js/jquery.min.js"></script> 
+<script type="text/javascript" src="js/prettify/prettify.js"></script> 
+<script src="https://cdn.bootcss.com/prettify/r298/run_prettify.js"></script>
+<script src="js/layout.js"></script>
+</body>
+</html>
